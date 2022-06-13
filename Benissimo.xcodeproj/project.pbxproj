@@ -15,6 +15,17 @@
 		019EA7D8203B1DB9007E8F47 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019EA7D7203B1DB9007E8F47 /* FrameExtractor.swift */; };
 		019EA7DC203BDA1A007E8F47 /* Float+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019EA7DB203BDA1A007E8F47 /* Float+Random.swift */; };
 		019EA7DE203BE7A4007E8F47 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019EA7DD203BE7A4007E8F47 /* MathUtils.swift */; };
+		0C7808CD67EEC0A8787F053D /* Pods_Benissimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81C47B30613255138228469 /* Pods_Benissimo.framework */; };
+		44D0EB94285650BE00DCA7FF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB93285650BE00DCA7FF /* SideMenuViewController.swift */; };
+		44D0EB96285650CE00DCA7FF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB95285650CE00DCA7FF /* CameraViewController.swift */; };
+		44D0EB98285650D600DCA7FF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB97285650D600DCA7FF /* ResultViewController.swift */; };
+		44D0EB9A285650E200DCA7FF /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB99285650E200DCA7FF /* CameraViewModel.swift */; };
+		44D0EB9C285650EC00DCA7FF /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB9B285650EC00DCA7FF /* ResultViewModel.swift */; };
+		44D0EB9E285650F600DCA7FF /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB9D285650F600DCA7FF /* SideMenuViewModel.swift */; };
+		44D0EBA02856583200DCA7FF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB9F2856583200DCA7FF /* Coordinator.swift */; };
+		44D0EBA228565A3900DCA7FF /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EBA128565A3900DCA7FF /* RootCoordinator.swift */; };
+		44D0EBA428565A4B00DCA7FF /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EBA328565A4B00DCA7FF /* MainCoordinator.swift */; };
+		44D0EBA928565EA900DCA7FF /* AutoLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EBA828565EA900DCA7FF /* AutoLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +39,20 @@
 		019EA7D7203B1DB9007E8F47 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		019EA7DB203BDA1A007E8F47 /* Float+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Random.swift"; sourceTree = "<group>"; };
 		019EA7DD203BE7A4007E8F47 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		44D0EB93285650BE00DCA7FF /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		44D0EB95285650CE00DCA7FF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		44D0EB97285650D600DCA7FF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		44D0EB99285650E200DCA7FF /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		44D0EB9B285650EC00DCA7FF /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		44D0EB9D285650F600DCA7FF /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		44D0EB9F2856583200DCA7FF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		44D0EBA128565A3900DCA7FF /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		44D0EBA328565A4B00DCA7FF /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		44D0EBA828565EA900DCA7FF /* AutoLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLoadable.swift; sourceTree = "<group>"; };
+		44D0EBAA28571D5900DCA7FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		572850ACC876A8D72C700CCB /* Pods-Benissimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Benissimo.debug.xcconfig"; path = "Target Support Files/Pods-Benissimo/Pods-Benissimo.debug.xcconfig"; sourceTree = "<group>"; };
+		78100DED138AB93472DF9675 /* Pods-Benissimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Benissimo.release.xcconfig"; path = "Target Support Files/Pods-Benissimo/Pods-Benissimo.release.xcconfig"; sourceTree = "<group>"; };
+		F81C47B30613255138228469 /* Pods_Benissimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Benissimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C7808CD67EEC0A8787F053D /* Pods_Benissimo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +70,11 @@
 		019EA7B1203AAB08007E8F47 = {
 			isa = PBXGroup;
 			children = (
+				44D0EBAA28571D5900DCA7FF /* README.md */,
 				019EA7BC203AAB08007E8F47 /* Benissimo */,
 				019EA7BB203AAB08007E8F47 /* Products */,
+				DFDB887A1AC3416C33C33B7C /* Pods */,
+				4D9ABF3233583D2CCCA6F37B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +89,9 @@
 		019EA7BC203AAB08007E8F47 /* Benissimo */ = {
 			isa = PBXGroup;
 			children = (
-				01D412C8203D7CD700B53AF2 /* Math */,
-				01D412C9203D7CE900B53AF2 /* Video */,
+				44D0EB8F28564B8900DCA7FF /* Model */,
+				44D0EB9028564BA100DCA7FF /* VideoProcessing */,
+				44D0EB8E28564B8200DCA7FF /* UI */,
 				019EA7BF203AAB08007E8F47 /* ViewController.swift */,
 				019EA7BD203AAB08007E8F47 /* AppDelegate.swift */,
 				019EA7C4203AAB08007E8F47 /* Assets.xcassets */,
@@ -81,12 +111,78 @@
 			path = Math;
 			sourceTree = "<group>";
 		};
-		01D412C9203D7CE900B53AF2 /* Video */ = {
+		44D0EB8E28564B8200DCA7FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				44D0EBA728565AF300DCA7FF /* Extensions */,
+				44D0EB9F2856583200DCA7FF /* Coordinator.swift */,
+				44D0EBA128565A3900DCA7FF /* RootCoordinator.swift */,
+				44D0EB9228564E1400DCA7FF /* MainFlow */,
+				44D0EB9128564BB400DCA7FF /* SideMenu */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		44D0EB8F28564B8900DCA7FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01D412C8203D7CD700B53AF2 /* Math */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44D0EB9028564BA100DCA7FF /* VideoProcessing */ = {
 			isa = PBXGroup;
 			children = (
 				019EA7D7203B1DB9007E8F47 /* FrameExtractor.swift */,
 			);
-			path = Video;
+			path = VideoProcessing;
+			sourceTree = "<group>";
+		};
+		44D0EB9128564BB400DCA7FF /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				44D0EB9D285650F600DCA7FF /* SideMenuViewModel.swift */,
+				44D0EB93285650BE00DCA7FF /* SideMenuViewController.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		44D0EB9228564E1400DCA7FF /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				44D0EBA328565A4B00DCA7FF /* MainCoordinator.swift */,
+				44D0EB99285650E200DCA7FF /* CameraViewModel.swift */,
+				44D0EB95285650CE00DCA7FF /* CameraViewController.swift */,
+				44D0EB9B285650EC00DCA7FF /* ResultViewModel.swift */,
+				44D0EB97285650D600DCA7FF /* ResultViewController.swift */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		44D0EBA728565AF300DCA7FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44D0EBA828565EA900DCA7FF /* AutoLoadable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D9ABF3233583D2CCCA6F37B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F81C47B30613255138228469 /* Pods_Benissimo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFDB887A1AC3416C33C33B7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				572850ACC876A8D72C700CCB /* Pods-Benissimo.debug.xcconfig */,
+				78100DED138AB93472DF9675 /* Pods-Benissimo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 019EA7CC203AAB08007E8F47 /* Build configuration list for PBXNativeTarget "Benissimo" */;
 			buildPhases = (
+				268199730C60A85D57D0380A /* [CP] Check Pods Manifest.lock */,
 				019EA7B6203AAB08007E8F47 /* Sources */,
 				019EA7B7203AAB08007E8F47 /* Frameworks */,
 				019EA7B8203AAB08007E8F47 /* Resources */,
+				F2828672CD29F98273A203E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,15 +254,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		268199730C60A85D57D0380A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Benissimo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2828672CD29F98273A203E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Benissimo/Pods-Benissimo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Benissimo/Pods-Benissimo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		019EA7B6203AAB08007E8F47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				019EA7C0203AAB08007E8F47 /* ViewController.swift in Sources */,
+				44D0EBA428565A4B00DCA7FF /* MainCoordinator.swift in Sources */,
+				44D0EBA928565EA900DCA7FF /* AutoLoadable.swift in Sources */,
+				44D0EB9C285650EC00DCA7FF /* ResultViewModel.swift in Sources */,
 				019EA7D8203B1DB9007E8F47 /* FrameExtractor.swift in Sources */,
+				44D0EB9E285650F600DCA7FF /* SideMenuViewModel.swift in Sources */,
 				019EA7BE203AAB08007E8F47 /* AppDelegate.swift in Sources */,
+				44D0EB98285650D600DCA7FF /* ResultViewController.swift in Sources */,
 				019EA7DC203BDA1A007E8F47 /* Float+Random.swift in Sources */,
+				44D0EB9A285650E200DCA7FF /* CameraViewModel.swift in Sources */,
+				44D0EBA02856583200DCA7FF /* Coordinator.swift in Sources */,
+				44D0EB96285650CE00DCA7FF /* CameraViewController.swift in Sources */,
+				44D0EBA228565A3900DCA7FF /* RootCoordinator.swift in Sources */,
+				44D0EB94285650BE00DCA7FF /* SideMenuViewController.swift in Sources */,
 				019EA7DE203BE7A4007E8F47 /* MathUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +451,7 @@
 		};
 		019EA7CD203AAB08007E8F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572850ACC876A8D72C700CCB /* Pods-Benissimo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +467,7 @@
 		};
 		019EA7CE203AAB08007E8F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78100DED138AB93472DF9675 /* Pods-Benissimo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

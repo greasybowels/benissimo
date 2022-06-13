@@ -1,0 +1,6 @@
+framework module Pods_Benissimo {
+  umbrella header "Pods-Benissimo-umbrella.h"
+
+  export *
+  module * { export * }
+}
