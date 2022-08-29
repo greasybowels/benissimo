@@ -16,6 +16,10 @@
 		019EA7DC203BDA1A007E8F47 /* Float+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019EA7DB203BDA1A007E8F47 /* Float+Random.swift */; };
 		019EA7DE203BE7A4007E8F47 /* MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019EA7DD203BE7A4007E8F47 /* MathUtils.swift */; };
 		0C7808CD67EEC0A8787F053D /* Pods_Benissimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81C47B30613255138228469 /* Pods_Benissimo.framework */; };
+		442EED6C2876C0F90060733D /* RecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EED6B2876C0F90060733D /* RecognitionService.swift */; };
+		442EED6E2876F4300060733D /* FeaturesAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EED6D2876F4300060733D /* FeaturesAnalyzer.swift */; };
+		443BEAA62857B23900E9A266 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BEAA52857B23900E9A266 /* CameraService.swift */; };
+		443BEAAA2857B3A400E9A266 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BEAA92857B3A400E9A266 /* CameraPreviewView.swift */; };
 		44D0EB94285650BE00DCA7FF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB93285650BE00DCA7FF /* SideMenuViewController.swift */; };
 		44D0EB96285650CE00DCA7FF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB95285650CE00DCA7FF /* CameraViewController.swift */; };
 		44D0EB98285650D600DCA7FF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D0EB97285650D600DCA7FF /* ResultViewController.swift */; };
@@ -39,6 +43,10 @@
 		019EA7D7203B1DB9007E8F47 /* FrameExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
 		019EA7DB203BDA1A007E8F47 /* Float+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Random.swift"; sourceTree = "<group>"; };
 		019EA7DD203BE7A4007E8F47 /* MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathUtils.swift; sourceTree = "<group>"; };
+		442EED6B2876C0F90060733D /* RecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionService.swift; sourceTree = "<group>"; };
+		442EED6D2876F4300060733D /* FeaturesAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesAnalyzer.swift; sourceTree = "<group>"; };
+		443BEAA52857B23900E9A266 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		443BEAA92857B3A400E9A266 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		44D0EB93285650BE00DCA7FF /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		44D0EB95285650CE00DCA7FF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		44D0EB97285650D600DCA7FF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,24 @@
 			path = Math;
 			sourceTree = "<group>";
 		};
+		443BEAA72857B37600E9A266 /* CameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				443BEAA82857B39100E9A266 /* Views */,
+				44D0EB99285650E200DCA7FF /* CameraViewModel.swift */,
+				44D0EB95285650CE00DCA7FF /* CameraViewController.swift */,
+			);
+			path = CameraViewController;
+			sourceTree = "<group>";
+		};
+		443BEAA82857B39100E9A266 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				443BEAA92857B3A400E9A266 /* CameraPreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		44D0EB8E28564B8200DCA7FF /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				019EA7D7203B1DB9007E8F47 /* FrameExtractor.swift */,
+				443BEAA52857B23900E9A266 /* CameraService.swift */,
+				442EED6B2876C0F90060733D /* RecognitionService.swift */,
+				442EED6D2876F4300060733D /* FeaturesAnalyzer.swift */,
 			);
 			path = VideoProcessing;
 			sourceTree = "<group>";
@@ -151,9 +180,8 @@
 		44D0EB9228564E1400DCA7FF /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
+				443BEAA72857B37600E9A266 /* CameraViewController */,
 				44D0EBA328565A4B00DCA7FF /* MainCoordinator.swift */,
-				44D0EB99285650E200DCA7FF /* CameraViewModel.swift */,
-				44D0EB95285650CE00DCA7FF /* CameraViewController.swift */,
 				44D0EB9B285650EC00DCA7FF /* ResultViewModel.swift */,
 				44D0EB97285650D600DCA7FF /* ResultViewController.swift */,
 			);
@@ -307,9 +335,13 @@
 				44D0EBA928565EA900DCA7FF /* AutoLoadable.swift in Sources */,
 				44D0EB9C285650EC00DCA7FF /* ResultViewModel.swift in Sources */,
 				019EA7D8203B1DB9007E8F47 /* FrameExtractor.swift in Sources */,
+				442EED6C2876C0F90060733D /* RecognitionService.swift in Sources */,
 				44D0EB9E285650F600DCA7FF /* SideMenuViewModel.swift in Sources */,
 				019EA7BE203AAB08007E8F47 /* AppDelegate.swift in Sources */,
+				443BEAAA2857B3A400E9A266 /* CameraPreviewView.swift in Sources */,
 				44D0EB98285650D600DCA7FF /* ResultViewController.swift in Sources */,
+				443BEAA62857B23900E9A266 /* CameraService.swift in Sources */,
+				442EED6E2876F4300060733D /* FeaturesAnalyzer.swift in Sources */,
 				019EA7DC203BDA1A007E8F47 /* Float+Random.swift in Sources */,
 				44D0EB9A285650E200DCA7FF /* CameraViewModel.swift in Sources */,
 				44D0EBA02856583200DCA7FF /* Coordinator.swift in Sources */,

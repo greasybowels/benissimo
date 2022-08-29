@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,57 +14,29 @@
             <objects>
                 <viewController storyboardIdentifier="CameraViewController" id="BYZ-38-t0r" customClass="CameraViewController" customModule="Benissimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MUD-xF-9zc">
-                                <rect key="frame" x="0.0" y="44" width="375" height="500"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="MUD-xF-9zc" secondAttribute="height" multiplier="3:4" id="lIS-co-P5Q"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTg-9a-ZML">
-                                <rect key="frame" x="16" y="558" width="343" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QFk-4j-Doj">
-                                <rect key="frame" x="0.0" y="44" width="375" height="500"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MG-hK-vXj" customClass="CameraPreviewView" customModule="Benissimo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-5X-lEd">
-                                <rect key="frame" x="0.0" y="44" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-1v-a3r">
-                                <rect key="frame" x="168" y="617" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kn2-P2-99q"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gyg-5X-lEd" firstAttribute="top" secondItem="MUD-xF-9zc" secondAttribute="top" id="06a-AL-x4a"/>
-                            <constraint firstItem="GTg-9a-ZML" firstAttribute="top" secondItem="MUD-xF-9zc" secondAttribute="bottom" constant="14" id="0M4-wc-B8q"/>
-                            <constraint firstItem="gyg-5X-lEd" firstAttribute="trailing" secondItem="MUD-xF-9zc" secondAttribute="trailing" id="1yg-gB-haE"/>
-                            <constraint firstItem="GTg-9a-ZML" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AL5-T9-vg7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUD-xF-9zc" secondAttribute="trailing" id="END-RC-6oz"/>
-                            <constraint firstItem="QFk-4j-Doj" firstAttribute="bottom" secondItem="MUD-xF-9zc" secondAttribute="bottom" id="F2E-UN-pGP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GTg-9a-ZML" secondAttribute="trailing" constant="16" id="LHC-MK-Vbs"/>
-                            <constraint firstItem="gyg-5X-lEd" firstAttribute="bottom" secondItem="MUD-xF-9zc" secondAttribute="bottom" id="R11-TA-nTi"/>
-                            <constraint firstItem="MUD-xF-9zc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TkY-YD-7ki"/>
-                            <constraint firstItem="gyg-5X-lEd" firstAttribute="leading" secondItem="MUD-xF-9zc" secondAttribute="leading" id="Wdj-if-IsR"/>
-                            <constraint firstItem="QFk-4j-Doj" firstAttribute="top" secondItem="MUD-xF-9zc" secondAttribute="top" id="caf-4I-R5g"/>
-                            <constraint firstItem="QFk-4j-Doj" firstAttribute="leading" secondItem="MUD-xF-9zc" secondAttribute="leading" id="f96-HY-A4b"/>
-                            <constraint firstItem="QFk-4j-Doj" firstAttribute="trailing" secondItem="MUD-xF-9zc" secondAttribute="trailing" id="jXL-Pt-e4b"/>
-                            <constraint firstItem="MUD-xF-9zc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mSl-mU-oJc"/>
+                            <constraint firstItem="gyg-5X-lEd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9eF-aq-Ila"/>
+                            <constraint firstItem="1MG-hK-vXj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="O1r-VT-b2m"/>
+                            <constraint firstItem="gyg-5X-lEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T0t-nf-Yxb"/>
+                            <constraint firstItem="1MG-hK-vXj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wkh-uc-eU4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1MG-hK-vXj" secondAttribute="trailing" id="dVN-0K-6ke"/>
+                            <constraint firstItem="gyg-5X-lEd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fM6-l4-ZPl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gyg-5X-lEd" secondAttribute="bottom" id="gVk-qq-uIe"/>
+                            <constraint firstAttribute="bottom" secondItem="1MG-hK-vXj" secondAttribute="bottom" id="oDa-oI-su7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bG1-e2-DAp">
@@ -80,10 +53,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="image" destination="MUD-xF-9zc" id="eP2-T5-bhf"/>
-                        <outlet property="overlayImage" destination="QFk-4j-Doj" id="a0c-OP-wWh"/>
+                        <outlet property="preview" destination="1MG-hK-vXj" id="jRE-l8-zPB"/>
                         <outlet property="sideBenisesContainer" destination="gyg-5X-lEd" id="LNM-Nh-Px9"/>
-                        <outlet property="stats" destination="GTg-9a-ZML" id="4ee-e4-Wdd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,7 +66,7 @@
             <objects>
                 <viewController storyboardIdentifier="SideMenuViewController" id="Eck-Kj-RI5" customClass="SideMenuViewController" customModule="Benissimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xRn-Mv-u8t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="x6B-zH-JR6"/>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,7 +81,7 @@
             <objects>
                 <viewController storyboardIdentifier="ResultViewController" id="5rX-Qb-FnC" customClass="ResultViewController" customModule="Benissimo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PVa-VS-cE3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="toD-xg-gYc"/>
                         <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,5 +95,8 @@
     <resources>
         <image name="icon_rotate_camera" width="25" height="25"/>
         <image name="icon_side_menu" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -13,8 +13,10 @@ class CameraViewController: UIViewController, AutoLoadable {
 
     @IBOutlet var image: UIImageView?
     @IBOutlet var overlayImage: UIImageView?
-    @IBOutlet var sideBenisesContainer: UIView?
+    @IBOutlet var sideBenisesContainer: UIView!
     @IBOutlet var stats : UILabel?
+    
+    @IBOutlet var preview: CameraPreviewView?
 
     // BENISES :DDD
     var leftBenises : [CALayer] = []
@@ -23,13 +25,15 @@ class CameraViewController: UIViewController, AutoLoadable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewModel.displayDelegate = self
         setupBenisesAnimation()
+        //preview?.videoPreviewLayer.session = self.viewModel.previewSession
     }
-    
+        
     func setupBenisesAnimation() {
         let benisCount = 15
-        leftBenises = self.createAnimatedBenises(benisCount: benisCount, baseTransform: CATransform3DIdentity, basePosition: CGPoint(x: 0, y: image!.frame.height))
-        rightBenises = self.createAnimatedBenises(benisCount: benisCount, baseTransform: CATransform3DMakeScale(-1.0, 1.0, 1.0), basePosition: CGPoint(x: image!.frame.width, y: image!.frame.height))
+        leftBenises = self.createAnimatedBenises(benisCount: benisCount, baseTransform: CATransform3DIdentity, basePosition: CGPoint(x: 0, y: sideBenisesContainer.bounds.height))
+        rightBenises = self.createAnimatedBenises(benisCount: benisCount, baseTransform: CATransform3DMakeScale(-1.0, 1.0, 1.0), basePosition: CGPoint(x: sideBenisesContainer.bounds.width, y: sideBenisesContainer.bounds.height))
 
         for benis in leftBenises {
             self.sideBenisesContainer?.layer.addSublayer(benis)
@@ -89,5 +93,17 @@ class CameraViewController: UIViewController, AutoLoadable {
 
     @IBAction func userDidTapChangeCamera(_ sender: AnyObject?) {
         self.viewModel.userDidTapChangeCamera()
+    }
+}
+
+extension CameraViewController: CameraViewModelDisplayDelegate {
+    func didUpdateFrame(image: CVPixelBuffer) {
+        DispatchQueue.main.async {
+            self.preview?.layer.contents = image
+        }
+    }
+    
+    func didUpdateDebugContour(points: [CGPoint]) {
+        
     }
 }
